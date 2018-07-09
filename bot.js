@@ -610,7 +610,7 @@ client.on('guildMemberAdd', member => {
 let rebel;
 client.on("ready", async  => {
     let guild = client.guilds.get("463823539045400588");
-  let users = guild.members.map(member => member.user.id);
+  let users = guild.member.map(member => member.user.id);
   let i;
   rebel=0;
 for (i=0 ; i < users.length ; i++) {
@@ -982,7 +982,7 @@ var jimp = require('jimp');// npm i jimp
 const fs = require("fs");// npm i fs
 
       client.on('guildMemberAdd', member => {
-      const welcomer =  member.guild.channels.find('name', 'member-log');//اسم الروم الي يرحب فيه
+      const welcomer =  member.guild.channels.find('name', '📰-announcement❊الاعلانات-💦');//اسم الروم الي يرحب فيه
 
       var Canvas = require('canvas')
       var jimp = require('jimp')
